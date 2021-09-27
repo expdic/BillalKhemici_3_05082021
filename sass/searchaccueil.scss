@@ -1,0 +1,18 @@
+@import "base.scss";
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    background-color: rgba(243, 243, 243);
+    font-size: 1.2rem;
+    position: relative;
+
+    &_icon {
+        margin-right: 1rem;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
