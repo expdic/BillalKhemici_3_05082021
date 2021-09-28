@@ -22,10 +22,10 @@
         font-size: 1.1rem;
         border-radius: 100px;
         color: white;
-        background: rgb(147, 86, 220);
         background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
         cursor: pointer;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+
 
         &:hover {
             background-color: white;
