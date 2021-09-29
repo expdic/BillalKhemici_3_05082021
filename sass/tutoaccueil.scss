@@ -16,6 +16,16 @@
         padding: 0;
         list-style: none;
         counter-reset: compteListe;
+
+        @media (min-width:64rem) {
+
+            display: flex;
+            flex-direction: row;
+
+        }
+
+
+
     }
 
     li {
@@ -27,13 +37,32 @@
         display: flex;
         position: relative;
 
+        @media (min-width:64rem) {
+            flex: 1;
+
+        }
+
+
         &:first-child {
             margin-top: 0;
+
+            @media (min-width:64rem) {
+                margin-top: 1rem;
+                margin-right: 1rem;
+
+            }
         }
 
         &:last-child {
             margin-bottom: 0;
+
+            @media (min-width:64rem) {
+                margin-bottom: 1rem;
+                margin-left: 1.8rem;
+
+            }
         }
+
 
         &::before {
             counter-increment: compteListe 1;

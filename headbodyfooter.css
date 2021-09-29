@@ -1,6 +1,6 @@
-.body {
-  margin: 0;
+.bo {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -9,6 +9,7 @@
   position: relative;
   z-index: 1000;
 }
+
 .header h1 {
   font-family: "Shrikhand", "cursive";
   margin: 0;
@@ -18,11 +19,13 @@
 .footer {
   background-color: #353535;
 }
+
 .footer .cont {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
+
 .footer span {
   color: white;
   font-family: "Shrikhand", "cursive";
@@ -30,27 +33,34 @@
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 .footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .footer li {
   margin: 0.5rem 0;
 }
+
 .footer li:first-child {
   margin-top: 0;
 }
+
 .footer li:last-child {
   margin-bottom: 0;
 }
+
 .footer a {
   color: white;
   text-decoration: none;
 }
+
 .footer a:hover {
   text-decoration: underline;
 }
+
 .footer_icon {
   width: 1.2rem;
   margin-right: 0.5rem;
