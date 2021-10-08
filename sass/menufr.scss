@@ -125,6 +125,11 @@
 
     &_IconColor {
         color: white;
+
+        &:hover {
+            transform: rotate(180)
+        }
+
     }
 
 

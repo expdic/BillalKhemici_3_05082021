@@ -401,6 +401,9 @@
 .menudetail_IconColor {
   color: white;
 }
+.menudetail_IconColor:hover {
+  transform: rotate(180);
+}
 
 .comman {
   margin-top: 2rem;
