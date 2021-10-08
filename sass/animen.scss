@@ -1,0 +1,127 @@
+.saut {
+    animation: saut 0.8s linear 1;
+
+    @keyframes saut {
+        0% {
+            transform: translateY(0.8rem);
+            opacity: 0%;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 100%;
+        }
+    }
+}
+
+.delay1 {
+    animation-delay: 0.1s;
+}
+
+.delay2 {
+    animation-delay: 0.2s;
+}
+
+.delay3 {
+    animation-delay: 0.3s;
+}
+
+.delay4 {
+    animation-delay: 0.4s;
+}
+
+.delay5 {
+    animation-delay: 0.5s;
+}
+
+.delay6 {
+    animation-delay: 0.6s;
+}
+
+.delay7 {
+    animation-delay: 0.7s;
+}
+
+.delay8 {
+    animation-delay: 0.8s;
+}
+
+.delay9 {
+    animation-delay: 0.9s;
+}
+
+.coeur {
+    padding: .2em;
+    cursor: pointer;
+
+    &:hover {
+        display: inline-block;
+        opacity: 1;
+        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+        background: -webkit-linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        animation: color 0.8s 1;
+
+        @keyframes color {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+    }
+
+
+
+}
+
+
+.confi {
+    align-items: center;
+    background-color: $color-tertiary;
+    display: flex;
+    justify-content: center;
+    margin: -16px -120px -16px 16px;
+    transition-duration: .5s;
+    width: 104px;
+    animation: colory 0.8s 1;
+
+    @keyframes colory {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+}
+
+
+
+.iconconf {
+
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    color: $color-tertiary;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    transform: rotate(180deg);
+    transition-duration: .8s;
+    width: 25px;
+
+}
+
+.icon {
+    color: $color-tertiary;
+}

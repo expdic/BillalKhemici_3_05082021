@@ -66,16 +66,27 @@
     cursor: pointer;
     max-width: 100%;
 
+
+
     header {
         flex: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     h4 {
         margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     p {
         margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
     }
 
@@ -86,6 +97,38 @@
         align-items: flex-end;
         padding-left: 0.5rem;
     }
+
+    &_check {
+        background-color: $color-tertiary;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.5s;
+
+
+    }
+
+    &:hover &_check {
+        margin-right: -1rem;
+    }
+
+    &_Icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+
+    }
+
+
+    &_IconColor {
+        color: white;
+    }
+
+
+
 }
 
 
@@ -111,7 +154,37 @@
     &:hover {
         background-color: white;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+        filter: brightness(1.1);
 
     }
 
+}
+
+.rotate-center {
+    -webkit-animation: rotate-center 0.3s ease-in-out both;
+    animation: rotate-center 0.3s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
