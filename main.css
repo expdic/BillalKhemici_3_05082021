@@ -355,6 +355,7 @@
   cursor: pointer;
   max-width: 100%;
 }
+.menudetail_text,
 .menudetail header {
   flex: 1;
   white-space: nowrap;
@@ -397,12 +398,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
-.menudetail_IconColor {
+.menudetail:hover .menudetail_Icon {
+  transform: rotate(0deg);
+}
+.menudetail i {
   color: white;
-}
-.menudetail_IconColor:hover {
-  transform: rotate(180);
 }
 
 .comman {

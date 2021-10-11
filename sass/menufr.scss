@@ -68,6 +68,7 @@
 
 
 
+    &_text,
     header {
         flex: 1;
         white-space: nowrap;
@@ -108,10 +109,12 @@
         transition-duration: 0.5s;
 
 
+
     }
 
     &:hover &_check {
         margin-right: -1rem;
+
     }
 
     &_Icon {
@@ -119,16 +122,22 @@
         align-items: center;
         justify-content: center;
         border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+
+
+    }
+
+    &:hover &_Icon {
+        transform: rotate(0deg);
 
     }
 
 
-    &_IconColor {
+
+    i {
         color: white;
 
-        &:hover {
-            transform: rotate(180)
-        }
 
     }
 
