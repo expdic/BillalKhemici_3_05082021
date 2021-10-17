@@ -308,10 +308,15 @@
 
 .menu {
   margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 0;
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+}
+@media (min-width: 64rem) {
+  .menu {
+    border-radius: 2rem 2rem 0 0;
+  }
 }
 .menu_header {
   padding: 1rem 2rem 0 1rem;
