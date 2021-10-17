@@ -15,10 +15,14 @@
 
 .menu {
     margin-top: -4rem;
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 0;
     background-color: #f6f6f6;
     z-index: 1;
     position: relative;
+
+    @media (min-width:64rem) {
+        border-radius: 2rem 2rem 0 0;
+    }
 
     &_header {
         padding: 1rem 2rem 0 1rem;
@@ -68,6 +72,7 @@
 
 
 
+    &_text,
     header {
         flex: 1;
         white-space: nowrap;
@@ -108,10 +113,12 @@
         transition-duration: 0.5s;
 
 
+
     }
 
     &:hover &_check {
         margin-right: -1rem;
+
     }
 
     &_Icon {
@@ -119,16 +126,22 @@
         align-items: center;
         justify-content: center;
         border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+
+
+    }
+
+    &:hover &_Icon {
+        transform: rotate(0deg);
 
     }
 
 
-    &_IconColor {
+
+    i {
         color: white;
 
-        &:hover {
-            transform: rotate(180)
-        }
 
     }
 
